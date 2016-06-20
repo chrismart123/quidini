@@ -1,0 +1,16 @@
+<div class="AddCustomer">
+	<form name="addform" role="addform" submitted="submitted" submit="submit()">
+		<div class="col-md-5">
+			<input class="form-control" type="text" placeholder="Name" ng-model="cust.name"/>
+		</div>
+		<div class="col-md-5">
+			<select class="form-control col-md-6" ng-options="product.name for product in products" ng-model="cust.product" placeholder="Product">
+				<option value="">Choose Product</option>
+			</select>
+		</div>
+		<div class="col-md-2">	
+			<button class="btn btn-primary btn-block" type="submit" ng-click="add(cust)"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+		</div>
+	</form>
+</div>
+
